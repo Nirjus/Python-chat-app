@@ -1,0 +1,23 @@
+# Python virtual environment
+venv/
+.venv/ # Some tools might name it .venv
+
+# Byte-code files
+*.pyc
+__pycache__/
+
+# IDE-specific files (e.g., VS Code, PyCharm)
+.vscode/
+.idea/
+
+# Operating System files
+.DS_Store # macOS
+Thumbs.db # Windows
+
+# Flask specific (if applicable)
+instance/ # Flask's instance folder for config/data that shouldn't be version controlled
+
+# Any logs or temporary files
+*.log
+*.sqlite3 # If you're using a SQLite database that's meant to be transient
+/static/uploads/ # If you have a folder for user uploads within static
