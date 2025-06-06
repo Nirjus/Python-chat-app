@@ -22,7 +22,7 @@
     rgb(136, 80, 250),
     rgb(33, 254, 114)
   );
-  padding: 3rem;
+  padding: 1rem;
   padding-top: 20px;
   padding-bottom: 20px;
   border-top-left-radius: 10px;
@@ -47,6 +47,7 @@
 
 .username-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -193,4 +194,15 @@
 #send-button:active {
   background-color: rgb(118, 69, 218);
   border: 1px solid rgb(118, 69, 218);
+}
+
+@media screen and (max-width: 600px) {
+  .chat-container {
+    padding: 0px;
+  }
+  .username-container {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0.5rem;
+  }
 }
