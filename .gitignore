@@ -1,7 +1,7 @@
 # Python virtual environment
 venv/
 .venv/ # Some tools might name it .venv
-
+.env
 # Byte-code files
 *.pyc
 __pycache__/
